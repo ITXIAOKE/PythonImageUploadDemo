@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form表单自定义上传图片</title>
+</head>
+<body>
+<h1>显示上传图片如下：</h1>
+<form action="/rec_img/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="img"><br/>
+    <input type="submit" value="上传图片">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>显示图片按钮</title>
+</head>
+<body>
+
+<h1>上传图片成功</h1>
+
+<form action="/show_img/" method="post" >
+    {% csrf_token %}
+
+    <input type="submit" value="显示图片">
+
+</form>
+
+
+</body>
+</html>
